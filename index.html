@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
+  
+    <link rel="stylesheet" href="style.css">
     <title>Theme Switcher</title>
 </head>
 <body>
-    <div>
-        <input type="checkbox" name="checkbox" id="checkbox">
+    <div class="toggle">
+        <input type="checkbox" class="checkbox" id="checkbox">
         <label for="checkbox" class="label">
-            <i class="them-dark"><img src="./assets/moon.svg" alt=""></i>
-            <i class="them-light"><img src="./assets/sun.svg" alt=""></i>
-            <div class="switch"></div>
+          <i class="theme-dark"><img src="./assets/moon.svg" alt="theme-dark"> </i>
+          <i class="theme-light"><img src="./assets/sun.svg" alt=""></i>
+          <div class="switch"></div>
         </label>
-    </div>
+      </div>
 </body>
+    <script src="script.js"></script>
 </html>

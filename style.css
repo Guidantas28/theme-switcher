@@ -15,5 +15,52 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: var(--light)
+    background: var(--light);
+
+    transition: background 0.3s linear;
+}
+
+body.dark{
+    background: var(--dark);
+}
+
+div.toggle{
+    background-color: #000000;
+    width: 14.75rem;
+    height:6.5rem;
+    border-radius: 3.7rem;
+    padding: 0.3rem
+}
+
+input.checkbox{
+    position: absolute;
+    opacity: 0;
+}
+
+input.checkbox:checked + .label .switch{
+    transform: translateX(8.2rem);
+}
+
+label.label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative
+}
+
+img{
+    width:5.85rem;
+    height:5.85rem;
+}
+
+div.switch{
+    background: #ffffff;
+    border-radius: 50%;
+    width: 5.8rem;
+    height: 5.8rem;
+    top: 0.1rem;
+    left: 0.1rem;
+    position: absolute;
+    transition: transform 0.3s linear;
 }
